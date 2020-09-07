@@ -9,8 +9,18 @@ public class PowerLinear {
         int n = scn.nextInt();
         System.out.println(print(x,n));
     }
-    private static int print(int x,int n) {
+    /*private static int print(int x,int n) {
         if(n == 1) return x;
         return x * print(x,n -1);
+    }*/
+
+    private static int print(int x,int n) {
+        if(n == 1) return x;
+        int power = print(x,n/2);
+        power = power * power;
+        if (n % 2 != 0) {
+            power = power * x;
+        }
+        return power;
     }
 }
