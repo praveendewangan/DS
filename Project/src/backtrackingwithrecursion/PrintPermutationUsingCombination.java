@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.Scanner;
 
-public class CombinationUsingPermute {
+public class PrintPermutationUsingCombination {
     private static void solution(int cb,int tb,int[] itmes,int ssf,int ts,String asf) {
         if (cb > tb) {
             if (ssf == ts) {

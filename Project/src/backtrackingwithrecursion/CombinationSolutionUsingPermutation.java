@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.Scanner;
 
-public class CombinationUsingPermutation2 {
+public class CombinationSolutionUsingPermutation {
     private static void solution(boolean[] boxes,int ci,int ti,int lb) {
         if(ci > ti) {
             for (int i = 0; i < boxes.length; i++) {

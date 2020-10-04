@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Permutation2 {
+public class PermutationOfString {
     private static void generateWords(int cc,String str,Character[] spots,Map<Character,Integer> lasocc) {
         if(cc == str.length()) {
             for (int i = 0; i < spots.length; i++) {

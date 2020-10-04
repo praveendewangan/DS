@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.Scanner;
 
-public class CombinationSolution {
+public class CombinationSolution1 {
     private static void solution(int cb,int tb,int ssf,int ts,String asf) {
         if (cb > tb) {
             if(ssf == ts){
