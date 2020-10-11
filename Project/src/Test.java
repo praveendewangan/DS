@@ -87,9 +87,9 @@ public class Test {
         }
     }
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        String str = scn.next();
-        int k = scn.nextInt();
+//        Scanner scn = new Scanner(System.in);
+//        String str = scn.next();
+//        int k = scn.nextInt();
 //        int boxex = scn.nextInt();
 //        int items = scn.nextInt();
 //        permutation1(new int[boxex],1,items);
@@ -105,13 +105,25 @@ public class Test {
 //            }
 //        }
 //        permutationOfDuplicateString(1,str.length(),fmap,"");
-        String ustr = "";
-        Set<Character> sets = new HashSet<>();
-        for (char ch : str.toCharArray()) {
-            if(!sets.contains(ch)){
-                ustr += ch;
-            }
+//        String ustr = "";
+//        Set<Character> sets = new HashSet<>();
+//        for (char ch : str.toCharArray()) {
+//            if(!sets.contains(ch)){
+//                ustr += ch;
+//            }
+//        }
+//        permuteString(ustr,k,"");
+        int num = 5;
+        int n = 5;
+        int counter = 0;
+        while (n != 0) {
+             n = n >> 1;
+            counter++;
         }
-        permuteString(ustr,k,"");
+        System.out.println(counter);
+        int max = 1 << counter;
+        System.out.println(max);
+        System.out.println(num ^ (max - 1));
+
     }
 }
