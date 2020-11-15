@@ -1,5 +1,10 @@
 package practice.arrays;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 public class _3KthSmallestAndLargestNumInArray {
     public static void main(String[] args) {
 //        int[] a1 = {7,10,4,3,20,15};
@@ -40,6 +45,7 @@ public class _3KthSmallestAndLargestNumInArray {
 
 
         int[] a = {7,10,4,3,20,15};
+        int[] arr = {7,10,4,3,20,15};
         int k = 3; // 3rd Smallest and Largest
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length ; j++) {
@@ -56,5 +62,35 @@ public class _3KthSmallestAndLargestNumInArray {
         System.out.println();
         System.out.println("K-Largest " + a[a.length - k]);
         System.out.println("K-Smallest " + a[k - 1]);
+        
+        findKthLargestAndSmallestElement(arr,k);
     }
+    
+    private static void findKthLargestAndSmallestElement(int[] a,int k) {
+        Queue<Integer> minHeap = new PriorityQueue<>(Collections.reverseOrder());
+        Queue<Integer> maxHeap = new PriorityQueue<>();
+//        int[] arr = {7,10,4,3,20,15};
+        for (int i = 0; i < a.length; i++) {
+            if(minHeap.size() < k) {
+                minHeap.add(a[i]);
+                maxHeap.add(a[i]);
+            } else {
+                if(minHeap.peek() > a[i]) {
+                    minHeap.poll();
+                    minHeap.add(a[i]);
+                }
+
+                if(maxHeap.peek() < a[i]) {
+                    maxHeap.poll();
+                    maxHeap.add(a[i]);
+                }
+            }
+        }
+        System.out.println();
+        System.out.println(minHeap);
+        System.out.println(maxHeap);
+        System.out.println("Heap -> Kth (3) smallest Element is : " +minHeap.peek());
+        System.out.println("Heap -> Kth (3) largest Element is : " +maxHeap.peek());
+    }
+    
 }
