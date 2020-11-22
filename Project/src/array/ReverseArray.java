@@ -18,4 +18,5 @@ public class ReverseArray {
             System.out.println(arr[i]);
         }
     }
+
 }
