@@ -18,7 +18,6 @@ public class _5MoveAllNegativeOneSide {
         }
         System.out.println();
         int j = -1;
-        int k = -1;
         int[] a = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
         for (int i = 0; i < a.length; i++) {
             if(i != 0 && a[i] < 0) {
