@@ -1,8 +1,11 @@
 package array;
 
 import java.util.Scanner;
-
-public class SubsetArray {
+  /*
+    SubSequence = 2^n;
+    SubString = n(n+1)/2;
+    */
+public class _17SubsetArray {
     public static void main(String[] args) {
 //        Scanner scn = new Scanner(System.in);
         /*int[] a = new int[scn.nextInt()];

@@ -2,7 +2,7 @@ package _2dArray;
 
 import java.util.Scanner;
 
-public class SearchInSortedMatrix {
+public class _9SearchInSortedMatrix {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int num = scn.nextInt();

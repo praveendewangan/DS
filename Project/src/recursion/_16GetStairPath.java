@@ -3,7 +3,7 @@ package recursion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetStairPath {
+public class _16GetStairPath {
     public static void main(String[] args) {
         System.out.println(getPath(4));
     }

@@ -1,8 +1,8 @@
-package array;
+package _2dArray;
 
 import java.util.Scanner;
 
-public class Array_2D_Print {
+public class _1Array_2D_Print {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

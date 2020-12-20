@@ -2,15 +2,15 @@ package array;
 
 import java.util.Scanner;
 
-public class AnyBaseAddition {
+public class _5AnyBaseAddition {
     public static void main(String[] args) {
         System.out.println("Enter first value ::");
         Scanner scn = new Scanner(System.in);
-        int n1 = scn.nextInt();
-        System.out.println("Enter second value ::");
-        int n2 = scn.nextInt();
-        System.out.println("Enter base value ::");
         int b = scn.nextInt();
+        System.out.println("Enter second value ::");
+        int n1 = scn.nextInt();
+        System.out.println("Enter base value ::");
+        int n2 = scn.nextInt();
         System.out.println("Output :: "+add(n1,n2,b));
     }
     private static int add(int n1, int n2, int b) {

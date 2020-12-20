@@ -1,6 +1,6 @@
 package recursion;
 
-public class MaxOfArray {
+public class _10MaxOfArray {
     public static void main(String[] args) {
         int[] a = {1,9,5,4,3};
         System.out.println(printMax(a,0));

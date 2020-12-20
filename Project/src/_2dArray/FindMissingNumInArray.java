@@ -1,4 +1,4 @@
-package array;
+package _2dArray;
 
 public class FindMissingNumInArray {
     public static void main(String[] args) {

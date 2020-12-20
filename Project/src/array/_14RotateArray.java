@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class RotateArray {
+public class _14RotateArray {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int[] arr = new int[scn.nextInt()];

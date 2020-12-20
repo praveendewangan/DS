@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class DecimalToAnyBase {
+public class _2DecimalToAnyBase {
     public static void main(String[] args) {
         System.out.println("Enter decimal value :: ");
         Scanner scn = new Scanner(System.in);

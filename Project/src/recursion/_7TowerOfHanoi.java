@@ -2,7 +2,7 @@ package recursion;
 
 import java.util.Scanner;
 
-public class TowerOfHanoi {
+public class _7TowerOfHanoi {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

@@ -1,6 +1,6 @@
 package recursion;
 
-public class PrintNQueens {
+public class _28PrintNQueens {
     public static void main(String[] args) {
         int[][] arr = new int[4][4];
         printQueen(arr,"",0);

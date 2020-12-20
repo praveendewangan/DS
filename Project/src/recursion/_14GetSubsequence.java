@@ -3,7 +3,7 @@ package recursion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetSubsequence {
+public class _14GetSubsequence {
     public static void main(String[] args) {
         System.out.println(getsc("abc"));
     }

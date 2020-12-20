@@ -1,6 +1,6 @@
 package array;
 
-public class _18BinaruSearch {
+public class _18BinarySearch {
     public static void main(String[] args) {
         int[] a = {1,2,3,4,5,6,7,8,9,0};
         int data = 31;

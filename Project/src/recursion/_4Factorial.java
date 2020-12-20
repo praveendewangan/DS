@@ -2,7 +2,7 @@ package recursion;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class _4Factorial {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

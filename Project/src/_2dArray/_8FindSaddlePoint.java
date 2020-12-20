@@ -2,7 +2,10 @@ package _2dArray;
 
 import java.util.Scanner;
 
-public class FindSaddlePoint {
+/*
+*  Saddle point - element is least in its row and max in its column
+* */
+public class _8FindSaddlePoint {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

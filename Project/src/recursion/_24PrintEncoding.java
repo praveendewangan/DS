@@ -1,6 +1,6 @@
 package recursion;
 
-public class PrintEncoding {
+public class _24PrintEncoding {
     public static void main(String[] args) {
         print("655196" +
                 "","");

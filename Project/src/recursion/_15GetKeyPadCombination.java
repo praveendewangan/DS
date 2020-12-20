@@ -3,7 +3,7 @@ package recursion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetKeyPadCombination {
+public class _15GetKeyPadCombination {
     private static int count = 0;
     private static String[] codes = {".;","abc","def","ghi","jkl","mno","pqrst","uv","wxyz"};
     public static void main(String[] args) {

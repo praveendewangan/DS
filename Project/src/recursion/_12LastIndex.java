@@ -1,6 +1,6 @@
 package recursion;
 
-public class LastIndex {
+public class _12LastIndex {
     static int count = 0;
     public static void main(String[] args) {
         int[] a = {15,11,40,4,4,9};

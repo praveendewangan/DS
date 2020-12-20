@@ -1,6 +1,6 @@
 package recursion;
 
-public class FindFirstIndex {
+public class _11FindFirstIndex {
     public static void main(String[] args) {
         int[] a = {2,3,2,4,5,6,8,4};
         int n = 5;

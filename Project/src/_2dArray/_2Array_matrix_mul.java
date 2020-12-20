@@ -2,7 +2,7 @@ package _2dArray;
 
 import java.util.Scanner;
 
-public class Array_matrix_mul {
+public class _2Array_matrix_mul {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

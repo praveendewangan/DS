@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class AnyBaseToDecimal {
+public class _3AnyBaseToDecimal {
         public static void main(String[] args) {
             System.out.println("Enter input value :: ");
             Scanner scn = new Scanner(System.in);

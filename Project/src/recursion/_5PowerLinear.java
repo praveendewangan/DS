@@ -2,7 +2,7 @@ package recursion;
 
 import java.util.Scanner;
 
-public class PowerLinear {
+public class _5PowerLinear {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int x = scn.nextInt();

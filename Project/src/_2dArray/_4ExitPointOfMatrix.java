@@ -2,7 +2,7 @@ package _2dArray;
 
 import java.util.Scanner;
 
-public class ExitPointOfMatrix {
+public class _4ExitPointOfMatrix {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

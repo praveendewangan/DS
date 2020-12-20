@@ -1,6 +1,6 @@
 package recursion;
 
-public class PrintKnightTour {
+public class _29PrintKnightTour {
     public static void main(String[] args) {
         int[][] arr = new int[5][5];
         printTour(arr,2,3,1);

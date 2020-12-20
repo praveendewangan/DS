@@ -1,6 +1,6 @@
 package array;
 
-public class FirstAndLastIndex {
+public class _21FirstAndLastIndex {
     public static void main(String[] args) {
         int[] a = {10,20,20,20,30,50,50,60};
         int h1 = a.length-1;

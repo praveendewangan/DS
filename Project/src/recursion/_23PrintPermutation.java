@@ -1,6 +1,6 @@
 package recursion;
 
-public class PrintPermutation {
+public class _23PrintPermutation {
     public static void main(String[] args) {
         print("abc","");
     }

@@ -3,7 +3,7 @@ package recursion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintStairPath {
+public class _20PrintStairPath {
     public static void main(String[] args) {
         getPath(4,"");
     }

@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class ArrayBar {
+public class _10ArrayBar {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int[] a = new int[scn.nextInt()];

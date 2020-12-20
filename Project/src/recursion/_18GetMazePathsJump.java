@@ -3,7 +3,7 @@ package recursion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetMazePathsJump {
+public class _18GetMazePathsJump {
     public static void main(String[] args) {
         int n = 2;
         int m = 2;

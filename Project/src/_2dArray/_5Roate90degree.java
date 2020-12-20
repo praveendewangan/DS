@@ -2,7 +2,7 @@ package _2dArray;
 
 import java.util.Scanner;
 
-public class Roate90degree {
+public class _5Roate90degree {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
