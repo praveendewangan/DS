@@ -3,8 +3,8 @@ package recursion;
 public class LastIndex {
     static int count = 0;
     public static void main(String[] args) {
-        int[] a = {2,3,2,4,5,6,8,4};
-        int n = 9;
+        int[] a = {15,11,40,4,4,9};
+        int n = 4;
         System.out.println(lastIndex(a,a.length - 1,n));
         System.out.println(count);
     }
@@ -18,5 +18,14 @@ public class LastIndex {
             return id;
         }
 
+    }
+    /*Efficient approch*/
+    private static int find(int[] a,int idx,int x) {
+        if(idx < 0) return -1;
+        if(a[idx] == x){
+            return idx;
+        } else {
+            return find(a,idx-1,x);
+        }
     }
 }

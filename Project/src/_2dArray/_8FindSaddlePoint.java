@@ -1,11 +1,10 @@
-package array;
+package _2dArray;
 
 import java.util.Scanner;
 
-public class SearchInSortedMatrix {
+public class FindSaddlePoint {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int num = scn.nextInt();
         int n = scn.nextInt();
         int m = scn.nextInt();
         int[][] a = new int[n][m];
@@ -15,19 +14,27 @@ public class SearchInSortedMatrix {
             }
         }
         print(a);
-        int i = 0;
-        int j = a[0].length - 1;
-        while (i < a.length && j >= 0) {
-            if(a[i][j] == num) {
-                System.out.println(i+"\t"+j);
+        int index = 0;
+        for (int i = 0; i < a.length; i++) {
+            int num = 0;
+            for (int j = 1; j < a.length; j++) {
+                if (a[i][j] < a[i][num]) {
+                    num = j;
+                }
+            }
+            boolean flag = true;
+            for (int j = 0; j < a.length ; j++) {
+                if(a[j][num] > a[i][num]){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag == true) {
+                System.out.println("#### ::: SADDLE POINT :: "+a[i][num]);
                 return;
-            } else if(a[i][j] > num){
-                j--;
-            } else {
-                i++;
             }
         }
-        System.out.println("NO data matched::::");
+        System.out.println("#### ::: SINVALID INPUT");
     }
     private static void print(int[][] a) {
         for (int i = 0; i < a.length; i++) {

@@ -16,13 +16,13 @@ public class PrintMazePathsJump {
         }
         List<String> paths = new ArrayList<>();
         for (int ms = 1;ms+sc<= dc;ms++) {
-            getMazePaths(sr,sc+ms,dr,dc,"h"+ms+path);
+            getMazePaths(sr,sc+ms,dr,dc,path+"h"+ms);
         }
         for (int ms = 1;ms+sr<= dr;ms++) {
-            getMazePaths(sr+ms,sc,dr,dc,"v"+ms+path);
+            getMazePaths(sr+ms,sc,dr,dc,path+"v"+ms);
         }
         for (int ms = 1;ms+sr<= dr && ms+sc <= dc;ms++) {
-            getMazePaths(sr+ms,sc+ms,dr,dc,"d"+ms+path);
+            getMazePaths(sr+ms,sc+ms,dr,dc,path+"d"+ms);
         }
     }
 }

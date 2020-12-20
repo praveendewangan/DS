@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class InverseArray {
+public class _15InverseArray {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int[] a = new int[scn.nextInt()];

@@ -5,8 +5,8 @@ import java.util.List;
 
 public class GetMazePathsJump {
     public static void main(String[] args) {
-        int n = 3;
-        int m = 3;
+        int n = 2;
+        int m = 2;
         List<String> list = getMazePaths(1,1,n,m);
         System.out.println(list);
         System.out.println(list.size());

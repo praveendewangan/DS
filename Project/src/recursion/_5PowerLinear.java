@@ -10,7 +10,7 @@ public class PowerLinear {
         System.out.println(print(x,n));
     }
     /*private static int print(int x,int n) {
-        if(n == 1) return x;
+        if(n < 1) return 1;
         return x * print(x,n -1);
     }*/
 

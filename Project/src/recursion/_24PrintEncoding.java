@@ -2,7 +2,7 @@ package recursion;
 
 public class PrintEncoding {
     public static void main(String[] args) {
-        print("123" +
+        print("655196" +
                 "","");
     }
     private static void print(String ques,String ans) {

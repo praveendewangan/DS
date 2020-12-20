@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class Frequency {
+public class _1Frequency {
     public static void main(String[] args) {
         System.out.println("Enter input number :: ");
         Scanner scn = new Scanner(System.in);
