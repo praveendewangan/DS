@@ -1,6 +1,6 @@
 package backtrackingwithrecursion;
 
-public class SolveCrossworldPuzzle extends DisplayArray{
+public class _8SolveCrossworldPuzzle extends DisplayArray{
     public static void main(String[] args) {
         int n = 9;
         int m = 9;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class KPartitionSubsets {
+public class _11KPartitionSubsets {
     private static int count = 0;
     private static void solution(int i,int n ,int k, int nos,List<List<Integer>> list) {
         if (i > n) {

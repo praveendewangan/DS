@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.*;
 
-public class PatternMatching {
+public class _15PatternMatching {
     private static void solution(String str, String pattern, Map<Character, String> map,String op) {
         if(pattern.length() == 0) {
             if (str.length() == 0) {

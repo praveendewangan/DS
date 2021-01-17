@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.Scanner;
 
-public class PalindraomePartition {
+public class _13PalindraomePartition {
     private static boolean isPalindrome(String str) {
         int li = 0;
         int ri = str.length() - 1;

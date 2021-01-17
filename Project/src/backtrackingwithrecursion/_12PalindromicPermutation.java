@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class PalindromicPermutation {
+public class _12PalindromicPermutation {
     private static void generatePermutation(int cs,int ts,Map<Character,Integer> fmap,Character odd,String asf) {
         if (cs > ts) {
             String rev = "";

@@ -17,9 +17,42 @@ public class Test {
 //            }
 //        }
 
-        String str = br.readLine().trim();
+//        String str = br.readLine().trim();
 //        System.out.println(nextGreaterElement(a));
-        smallestNumFolloPattern(str);
+//        smallestNumFolloPattern(str);
+        int[] a = {10,20,50,-1,60,-1,-1,30,70,-1,80,110,-1,100,-1,-1,90,-1,-1,40,100,-1,-1,-1};
+        Stack<Node> st = new Stack<>();
+        Node root = null;
+        for (int i = 0; i < a.length; i++) {
+            if(a[i] == -1){
+                st.pop();
+            } else {
+                Node node = new Node();
+                node.data = a[i];
+                if(st.size() == 0) {
+                    root = node;
+                } else {
+                    Node top = st.peek();
+                    top.childrean.add(node);
+                }
+                st.push(node);
+            }
+        }
+        display(root);
+    }
+    private static void display(Node node) {
+        String str = node.data + " -> ";
+        for (Node child : node.childrean) {
+            str += child.data + ",";
+        }
+        System.out.println(str);
+        for (Node child : node.childrean) {
+            display(child);
+        }
+    }
+    private static class Node {
+        int data;
+        List<Node> childrean = new ArrayList<>();
     }
     private static void smallestNumFolloPattern(String str) {
         Stack<Integer> st = new Stack<>();

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class EqualSumSubsetPartition {
+public class _14EqualSumSubsetPartition {
     private static void solution(int[] arr,int vidx,int n,int k,int[] subsetsum,int nos,List<List<Integer>> list) {
         if(vidx > arr.length){
             if(nos == k) {

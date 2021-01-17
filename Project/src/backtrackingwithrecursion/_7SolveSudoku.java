@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.Scanner;
 
-public class SolveSudoku extends DisplayArray {
+public class _7SolveSudoku extends DisplayArray {
     private static void solve(int[][] a,int i,int j) {
         if(i == a.length ) {
             printArray(a);

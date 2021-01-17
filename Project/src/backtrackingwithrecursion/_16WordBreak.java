@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class WordBreak {
+public class _16WordBreak {
     private static void solution(String str,String asf, Set<String> list) {
         if (str.length() == 0) {
             System.out.println(asf);

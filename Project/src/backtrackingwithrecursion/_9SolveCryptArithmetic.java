@@ -3,7 +3,7 @@ package backtrackingwithrecursion;
 import javax.print.DocFlavor;
 import java.util.Map;
 
-public class SolveCryptArithmetic {
+public class _9SolveCryptArithmetic {
     public static void main(String[] args) {
 
     }

@@ -2,7 +2,7 @@ package backtrackingwithrecursion;
 
 import java.util.Scanner;
 
-public class FriendsParing {
+public class _10FriendsParing {
     private static int counter = 1;
     private static void solution(int i, int n,boolean[] used,String asf) {
         if(i > n) {
