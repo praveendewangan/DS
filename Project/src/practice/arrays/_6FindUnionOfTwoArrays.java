@@ -51,13 +51,13 @@ public class _6FindUnionOfTwoArrays {
             Set<Integer> hs = new HashSet();
             int[] a1 = new int[n];
             for(int i = 0 ; i < n; i++) {
-                a1[i] = Integer.parseInt(str[i]);
+                a1[i] = Integer.parseInt(str[i].trim());
                 hs.add(a1[i]);
             }
             str = br.readLine().split(" ");
             int[] a2 = new int[m];
             for(int i = 0 ; i< m; i++) {
-                a2[i] = Integer.parseInt(str[i]);
+                a2[i] = Integer.parseInt(str[i].trim());
                 hs.add(a2[i]);
             }
             System.out.println(hs.size());
