@@ -3,9 +3,70 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+
 public class Test {
+    private static int findTotalMaxSum(int[] a,int[] b) {
+        int sum1 = 0;
+        int sum2 = 0;
+        int i = 0;
+        int j = 0;
+        int result = 0;
+        int m = a.length;
+        int n = b.length;
+        while(i < m && j < n) {
+            if(a[i] < b[j]){
+                sum1 += a[i++];
+            } else if(a[i] > b[j]) {
+                sum2 += a[j++];
+            } else {
+                result += Math.max(sum1,sum2);
+                sum1 = 0;
+                sum2 = 0;
+                while(i < m && j < n && a[i] == b[j]) {
+                    result += a[i];
+                    i++;
+                    j++;
+                }
+            }
+        }
+        while(i < m) {
+            sum1 += a[i++];
+        }
+        while(j < n) {
+            sum2 += b[j++];
+        }
+        result += Math.max(sum1, sum2);
+        return result;
+    }
+    private static int countPermutation(String bigstr,String smallstr){
+        int hsVal = 0;
+        for(char ch : smallstr.toCharArray()){
+            hsVal += ch;
+        }
+        int count = 0;
+        int txtval = 0;
+        for(int i=0;i<smallstr.length();i++){
+            txtval += bigstr.charAt(i);
+        }
+        if(txtval == hsVal){
+            count++;
+        }
+        for(int i=1;i<=bigstr.length()-smallstr.length();i++){
+            txtval = 0;
+            for(int j=i;j<i+smallstr.length();j++){
+                txtval += bigstr.charAt(j);
+            }
+            if(txtval == hsVal){
+                count++;
+            }
+        }
+        return count;
+    }
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(countPermutation("cbabcacabca","abc"));
+        // System.out.println(findTotalMaxSum(new int[]{1, 2, 8, 9, 10, 15, 20},new int[]{7, 8, 10, 11, 20, 25}));
+        System.exit(0);
+        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        String[] p = br.readLine().trim().split(" ");
 //        int n = Integer.parseInt(br.readLine());
 //        int[][] arr = new int[n][2];

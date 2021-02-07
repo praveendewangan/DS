@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _17RabinKarpAlgo",
+            "request": "launch",
+            "mainClass": "practice.string._17RabinKarpAlgo",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _13EditDistance",
+            "request": "launch",
+            "mainClass": "practice.string._13EditDistance",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _12WordWrap",
+            "request": "launch",
+            "mainClass": "practice.string._12WordWrap",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _11SplitBinaryStringIntoZeroAndOne",
+            "request": "launch",
+            "mainClass": "practice.string._11SplitBinaryStringIntoZeroAndOne",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _9PrintAllSubSequence",
+            "request": "launch",
+            "mainClass": "practice.string._9PrintAllSubSequence",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _5ValidShuffle",
+            "request": "launch",
+            "mainClass": "practice.string._5ValidShuffle",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _4CheckStringisReverseofOther",
+            "request": "launch",
+            "mainClass": "practice.string._4CheckStringisReverseofOther",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _3PrintDuplicates",
+            "request": "launch",
+            "mainClass": "practice.string._3PrintDuplicates",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _10CommonElementsInAllrow",
+            "request": "launch",
+            "mainClass": "practice.matrix._10CommonElementsInAllrow",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _8Rotate90degree",
+            "request": "launch",
+            "mainClass": "practice.matrix._8Rotate90degree",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _7FindASpecificPair",
+            "request": "launch",
+            "mainClass": "practice.matrix._7FindASpecificPair",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _30ChoclateDistribution",
             "request": "launch",
             "mainClass": "practice.arrays._30ChoclateDistribution",

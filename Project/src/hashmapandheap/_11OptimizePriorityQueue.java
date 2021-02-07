@@ -108,5 +108,5 @@ public class _11OptimizePriorityQueue {
             return data.size();
         }
     }
-    public static void main(String[] args) throws IOException {}
+    public static void main(String[] args) {}
 }

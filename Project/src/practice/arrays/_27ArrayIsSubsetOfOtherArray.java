@@ -1,6 +1,10 @@
 package practice.arrays;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class _27ArrayIsSubsetOfOtherArray {
     /* %%%%%%%%%%%%%%%%%%%%% First Approch %%%%%%%%%%%% 

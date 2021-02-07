@@ -35,7 +35,7 @@ public class _6LargestAreaHistogram {
         lb[0] = -1;
 
         for (int i = 0; i < a.length ; i++) {
-            while (st.size() > 0 && a[i] >= a[st.peek()]) {
+            while (st.size() > 0 && a[i] <= a[st.peek()]) {
                 st.pop();
             }
             if(st.size() == 0) {
