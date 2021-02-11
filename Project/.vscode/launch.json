@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _31GenerateValidIpAddresses",
+            "request": "launch",
+            "mainClass": "practice.string._31GenerateValidIpAddresses",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _24BoyerMoorePatternSearch",
+            "request": "launch",
+            "mainClass": "practice.string._24BoyerMoorePatternSearch",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _23SearchWordIn2DGrid2",
+            "request": "launch",
+            "mainClass": "practice.string._23SearchWordIn2DGrid2",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _23SearchWordIn2DGrid",
+            "request": "launch",
+            "mainClass": "practice.string._23SearchWordIn2DGrid",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _22CountStringIn2DArray",
+            "request": "launch",
+            "mainClass": "practice.string._22CountStringIn2DArray",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19GetKpc",
+            "request": "launch",
+            "mainClass": "practice.string._19GetKpc",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19PrintKpc",
+            "request": "launch",
+            "mainClass": "practice.string._19PrintKpc",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19NumericKeyPad",
+            "request": "launch",
+            "mainClass": "practice.string._19NumericKeyPad",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _17RabinKarpAlgo",
             "request": "launch",
             "mainClass": "practice.string._17RabinKarpAlgo",
