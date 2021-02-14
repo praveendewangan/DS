@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _17RabinKarpAlgo2",
+            "request": "launch",
+            "mainClass": "practice.string._17RabinKarpAlgo2",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _42PrintAllSentenceCanBeformedfromList",
+            "request": "launch",
+            "mainClass": "practice.string._42PrintAllSentenceCanBeformedfromList",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _40ConverStringIntoOtherString",
+            "request": "launch",
+            "mainClass": "practice.string._40ConverStringIntoOtherString",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _39AllocateComputerToCustomer",
+            "request": "launch",
+            "mainClass": "practice.string._39AllocateComputerToCustomer",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _31GenerateValidIpAddresses",
             "request": "launch",
             "mainClass": "practice.string._31GenerateValidIpAddresses",

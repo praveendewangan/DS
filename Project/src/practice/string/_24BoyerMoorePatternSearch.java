@@ -6,8 +6,8 @@ import org.w3c.dom.Text;
 
 public class _24BoyerMoorePatternSearch {
     public static void main(String[] args) {
-        char txt[] = "ABAAABCD".toCharArray(); 
-         char pat[] = "ABC".toCharArray(); 
+        char txt[] = "AABAACAADAABAABA".toCharArray(); 
+         char pat[] = "AABA".toCharArray(); 
          search(txt, pat); 
     }
     private static void search(char[] txt,char[] pat) {
