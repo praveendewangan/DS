@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _9SearchingArrayAdjuscentDifferByK",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._9SearchingArrayAdjuscentDifferByK",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _17RabinKarpAlgo2",
             "request": "launch",
             "mainClass": "practice.string._17RabinKarpAlgo2",
