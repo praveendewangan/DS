@@ -6,6 +6,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _35InPlaceMergeSort",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._35InPlaceMergeSort",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _34InversionCount",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._34InversionCount",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _32DoubleHelix",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._32DoubleHelix",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _31RotiParatha",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._31RotiParatha",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _30PainterPartion",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._30PainterPartion",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _27WeightedJobScheduling",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._27WeightedJobScheduling",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _26EKOSPOJ",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._26EKOSPOJ",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _24AggressiveCows",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._24AggressiveCows",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _22PivotElementInSortedArray",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._22PivotElementInSortedArray",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _21KthSmallestAgain",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._21KthSmallestAgain",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19BishuAndSoldier2",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._19BishuAndSoldier2",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19BishuAndSoldier",
+            "request": "launch",
+            "mainClass": "practice.searchingAndSorting._19BishuAndSoldier",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _9SearchingArrayAdjuscentDifferByK",
             "request": "launch",
             "mainClass": "practice.searchingAndSorting._9SearchingArrayAdjuscentDifferByK",
