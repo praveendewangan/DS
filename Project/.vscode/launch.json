@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _25ReverseDoublyLinkedListInAGroup",
+            "request": "launch",
+            "mainClass": "practice.linkedlist._25ReverseDoublyLinkedListInAGroup",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2CountTripletInDoublyLinkedList",
+            "request": "launch",
+            "mainClass": "practice.linkedlist._2CountTripletInDoublyLinkedList",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _21FindPairOfSumInDoublyLinkedList",
+            "request": "launch",
+            "mainClass": "practice.linkedlist._21FindPairOfSumInDoublyLinkedList",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _1ReverseLinkedListRecursivaly",
+            "request": "launch",
+            "mainClass": "practice.linkedlist._1ReverseLinkedListRecursivaly",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2ReverseLinkedListIteratvely",
+            "request": "launch",
+            "mainClass": "practice.linkedlist._2ReverseLinkedListIteratvely",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _35InPlaceMergeSort",
             "request": "launch",
             "mainClass": "practice.searchingAndSorting._35InPlaceMergeSort",
