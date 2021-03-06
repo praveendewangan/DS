@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _33KthAncestorOfNodeInBinaryTree",
+            "request": "launch",
+            "mainClass": "practice.binarytree._33KthAncestorOfNodeInBinaryTree",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _30PrintKSumPathsBinaryTree",
+            "request": "launch",
+            "mainClass": "practice.binarytree._30PrintKSumPathsBinaryTree",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _28LargestSubTreeSum",
+            "request": "launch",
+            "mainClass": "practice.binarytree._28LargestSubTreeSum",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _17ConstructBinaryTreeFromString",
+            "request": "launch",
+            "mainClass": "practice.binarytree._17ConstructBinaryTreeFromString",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _8PreorderTraversalRecursively",
+            "request": "launch",
+            "mainClass": "practice.binarytree._8PreorderTraversalRecursively",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _8PreorderTraversalIteratevely",
+            "request": "launch",
+            "mainClass": "practice.binarytree._8PreorderTraversalIteratevely",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _7PreorderTraversalIteratevely",
+            "request": "launch",
+            "mainClass": "practice.binarytree._7PreorderTraversalIteratevely",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _7PreorderTraversalRecursively",
+            "request": "launch",
+            "mainClass": "practice.binarytree._7PreorderTraversalRecursively",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _6InorderTraversalIteratevely",
+            "request": "launch",
+            "mainClass": "practice.binarytree._6InorderTraversalIteratevely",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _6InorderTraversalRecursively",
+            "request": "launch",
+            "mainClass": "practice.binarytree._6InorderTraversalRecursively",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _25ReverseDoublyLinkedListInAGroup",
             "request": "launch",
             "mainClass": "practice.linkedlist._25ReverseDoublyLinkedListInAGroup",
