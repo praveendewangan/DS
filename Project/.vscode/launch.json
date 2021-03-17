@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _15MaximizeSumOfArrayAfterKNegation",
+            "request": "launch",
+            "mainClass": "practice.greedy._15MaximizeSumOfArrayAfterKNegation",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _14MaxProductSubArraySum",
+            "request": "launch",
+            "mainClass": "practice.greedy._14MaxProductSubArraySum",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _33KthAncestorOfNodeInBinaryTree",
             "request": "launch",
             "mainClass": "practice.binarytree._33KthAncestorOfNodeInBinaryTree",
