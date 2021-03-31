@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _33NextSmallerElement",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._33NextSmallerElement",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _31SumOfMinAndMaxOfSubArraySizeK",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._31SumOfMinAndMaxOfSubArraySizeK",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _26InterleaveQueue",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._26InterleaveQueue",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _20CheckIfArrayIsTackPermutationOfOther",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._20CheckIfArrayIsTackPermutationOfOther",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _18RedundantBracket",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._18RedundantBracket",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _13ReverseAStack",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._13ReverseAStack",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _5KStack",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._5KStack",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _4FindMiddleInStack",
+            "request": "launch",
+            "mainClass": "practice.stackAndQueue._4FindMiddleInStack",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19KthPermutation",
+            "request": "launch",
+            "mainClass": "practice.backtracking._19KthPermutation",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _17PrintAllPossiblePathsFronLefttoRight",
+            "request": "launch",
+            "mainClass": "practice.backtracking._17PrintAllPossiblePathsFronLefttoRight",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _16LongestPathInMatrixWIthHurdle",
+            "request": "launch",
+            "mainClass": "practice.backtracking._16LongestPathInMatrixWIthHurdle",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _11ShortestPath",
+            "request": "launch",
+            "mainClass": "practice.backtracking._11ShortestPath",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _7AllPalindromicPartition",
+            "request": "launch",
+            "mainClass": "practice.backtracking._7AllPalindromicPartition",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _15MaximizeSumOfArrayAfterKNegation",
             "request": "launch",
             "mainClass": "practice.greedy._15MaximizeSumOfArrayAfterKNegation",
