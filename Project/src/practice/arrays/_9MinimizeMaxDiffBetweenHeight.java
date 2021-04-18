@@ -17,7 +17,20 @@ public class _9MinimizeMaxDiffBetweenHeight {
         int n = 10;
         getMinDiff(a,n,k);
     }
+    // Best approtch
     static int getMinDiff(int[] a, int n, int k) {
+        int max = 0, min = 0,r = a[n-1] - a[0];
+        Arrays.sort(a);
+        for(int i = 1; i < n; i++) {
+            if(a[i] >= k) {
+                max = Math.max(a[i-1] + k, a[n-1] - k);
+                min = Math.min(a[i] - k, a[0] + k);
+                r = Math.min(r, max - min);
+            }
+        }
+        return r;
+    }
+    static int getMinDiff2(int[] a, int n, int k) {
         if(n == 1) {
             return 0;
         }

@@ -6,6 +6,314 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _5CountOccInString",
+            "request": "launch",
+            "mainClass": "_5CountOccInString",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _4CompressString",
+            "request": "launch",
+            "mainClass": "_4CompressString",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _20RearrangeAlternatePositiveAndNegativeNumbersOrderReserved",
+            "request": "launch",
+            "mainClass": "practice.arrays._20RearrangeAlternatePositiveAndNegativeNumbersOrderReserved",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _4Factorial",
+            "request": "launch",
+            "mainClass": "_codes.recursion._4Factorial",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _3PrintDecreasingIncreasing",
+            "request": "launch",
+            "mainClass": "_codes.recursion._3PrintDecreasingIncreasing",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2PrintIncreasing",
+            "request": "launch",
+            "mainClass": "_codes.recursion._2PrintIncreasing",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _1PrintDecreasing",
+            "request": "launch",
+            "mainClass": "_codes.recursion._1PrintDecreasing",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19SaddlePoint",
+            "request": "launch",
+            "mainClass": "_codes.arrays._19SaddlePoint",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _17Rotate90Degree2",
+            "request": "launch",
+            "mainClass": "_codes.arrays._17Rotate90Degree2",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _17Rotate90Degree",
+            "request": "launch",
+            "mainClass": "_codes.arrays._17Rotate90Degree",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _15RingRotate",
+            "request": "launch",
+            "mainClass": "_codes.arrays._15RingRotate",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _14SpiralMatrix",
+            "request": "launch",
+            "mainClass": "_codes.arrays._14SpiralMatrix",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _12MatrixMultiplication",
+            "request": "launch",
+            "mainClass": "_codes.arrays._12MatrixMultiplication",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _3BarChart",
+            "request": "launch",
+            "mainClass": "_codes.arrays._3BarChart",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _7AnyBaseMultiplication",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._7AnyBaseMultiplication",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _6AnyBaseSubtraction",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._6AnyBaseSubtraction",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _5AnyBaseAddition",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._5AnyBaseAddition",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _4AnyBaseToAnyBase",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._4AnyBaseToAnyBase",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _3AnyBaseToDecimal",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._3AnyBaseToDecimal",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2DecimalToAnyBase",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._2DecimalToAnyBase",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _1DigitFrequency",
+            "request": "launch",
+            "mainClass": "_codes.functionAndArray._1DigitFrequency",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "_codes.Test",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _20Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._20Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _19Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._19Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _18Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._18Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _17Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._17Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _16Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._16Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _15Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._15Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _14Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._14Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _13Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._13Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _12Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._12Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _11Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._11Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _10Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._10Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _9Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._9Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _8Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._8Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _7Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._7Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _6Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._6Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _5Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._5Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _4Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._4Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _3Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._3Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._2Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _1Pattern",
+            "request": "launch",
+            "mainClass": "_codes.patterns._1Pattern",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _5KthSmallestElement",
+            "request": "launch",
+            "mainClass": "practice.heap._5KthSmallestElement",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2HeapSort",
+            "request": "launch",
+            "mainClass": "practice.heap._2HeapSort",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _33NextSmallerElement",
             "request": "launch",
             "mainClass": "practice.stackAndQueue._33NextSmallerElement",
