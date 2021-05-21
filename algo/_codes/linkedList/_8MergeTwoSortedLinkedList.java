@@ -2,6 +2,10 @@ public class _8MergeTwoSortedLinkedList {
     public static class Node {
         int data;
         Node next;
+
+        public Node(int data) {
+            this.data = data;
+        }
     }
 
     public static class LinkedList {
@@ -223,7 +227,49 @@ public class _8MergeTwoSortedLinkedList {
             return s.data;
         }
 
+        
         public static LinkedList mergeTwoSortedLists(LinkedList l1, LinkedList l2) {
+            Node head1 = l1.head;
+            Node head2 = l2.head;
+
+            Node t1 = head1;
+            Node t2 = head2;
+
+            Node dummy = new Node(-1);
+            Node temp = dummy;
+
+            while(t1 != null && t2 != null) {
+                if(t1.data < t2.data) {
+                    temp.next = t1;
+                    temp = temp.next;
+                    t1 = t1.next;
+                } else {
+                    temp.next = t2;
+                    temp = temp.next;
+                    t2 = t2.next;
+                }
+            }
+
+            if(t1  == null) {
+                temp.next = t2;
+            } else {
+                temp.next = t1;
+            }
+
+            LinkedList res = new LinkedList();
+            res.head = dummy.next;
+            int sz = 0;
+            temp = dummy;
+            while(temp.next != null) {
+                sz++;
+                temp = temp.next;
+            }
+            res.tail = temp;
+            res.size = sz;
+            return res;
+        }
+
+        public static LinkedList mergeTwoSortedLists2(LinkedList l1, LinkedList l2) {
             LinkedList list = new LinkedList();   
             Node node1 = l1.head;
             Node node2 = l2.head;

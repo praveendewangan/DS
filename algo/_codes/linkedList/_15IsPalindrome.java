@@ -1,4 +1,4 @@
-public class _10RemoveDuplicateInSortedList {
+public class _15IsPalindrome {
     public static class Node {
         int data;
         Node next;
@@ -251,11 +251,11 @@ public class _10RemoveDuplicateInSortedList {
           return ml;
         }
     
-        public static Node midNode(Node head, Node tail){
+        public static Node midNode(Node head, Node tail) {
           Node f = head;
           Node s = head;
     
-          while(f != tail && f.next != tail){
+          while (f != tail && f.next != tail) {
             f = f.next.next;
             s = s.next;
           }
@@ -263,8 +263,8 @@ public class _10RemoveDuplicateInSortedList {
           return s;
         }
     
-        public static LinkedList mergeSort(Node head, Node tail){
-          if(head == tail){
+        public static LinkedList mergeSort(Node head, Node tail) {
+          if (head == tail) {
             LinkedList br = new LinkedList();
             br.addLast(head.data);
             return br;
@@ -276,34 +276,176 @@ public class _10RemoveDuplicateInSortedList {
           LinkedList sl = mergeTwoSortedLists(fsh, ssh);
           return sl;
         }
-      
-        public void removeDuplicates(){
-            if(head == null) {
-                return;
+    
+        public void removeDuplicates() {
+          LinkedList res = new LinkedList();
+    
+          while (this.size() > 0) {
+            int val = this.getFirst();
+            this.removeFirst();
+    
+            if (res.size() == 0 || val != res.tail.data) {
+              res.addLast(val);
             }
-            Node temp = head;
-            while(temp != null && temp.next != null){
-                if(temp.data != temp.next.data){
-                    temp = temp.next;
-                } else {
-                    temp.next = temp.next.next;
-                }
-            }
-        }
-        public void removeDuplicates2() {
-          Node temp = this.head;
-          Node itr = temp.next;
-  
-          while(itr != null) {
-              if(temp.data == itr.data) {
-                  itr = itr.next;
-              } else {
-                  temp.next = itr;
-                  temp = temp.next;
-                  itr = itr.next;
-              }
           }
-      }
+    
+          this.head = res.head;
+          this.tail = res.tail;
+          this.size = res.size;
+        }
+    
+        public void oddEven() {
+          LinkedList odd = new LinkedList();
+          LinkedList even = new LinkedList();
+    
+          while (this.size > 0) {
+            int val = this.getFirst();
+            this.removeFirst();
+    
+            if (val % 2 == 0) {
+              even.addLast(val);
+            } else {
+              odd.addLast(val);
+            }
+          }
+    
+          if (odd.size > 0 && even.size > 0) {
+            odd.tail.next = even.head;
+    
+            this.head = odd.head;
+            this.tail = even.tail;
+            this.size = odd.size + even.size;
+          } else if (odd.size > 0) {
+            this.head = odd.head;
+            this.tail = odd.tail;
+            this.size = odd.size;
+          } else if (even.size > 0) {
+            this.head = even.head;
+            this.tail = even.tail;
+            this.size = even.size;
+          }
+        }
+    
+        public void kReverse(int k) {
+          LinkedList prev = null;
+    
+          while (this.size > 0) {
+            LinkedList curr = new LinkedList();
+    
+            if (this.size >= k) {
+              for (int i = 0; i < k; i++) {
+                int val = this.getFirst();
+                this.removeFirst();
+                curr.addFirst(val);
+              }
+            } else {
+              int sz = this.size;
+              for (int i = 0; i < sz; i++) {
+                int val = this.getFirst();
+                this.removeFirst();
+                curr.addLast(val);
+              }
+            }
+    
+            if (prev == null) {
+              prev = curr;
+            } else {
+              prev.tail.next = curr.head;
+              prev.tail = curr.tail;
+              prev.size += curr.size;
+            }
+          }
+    
+          this.head = prev.head;
+          this.tail = prev.tail;
+          this.size = prev.size;
+        }
+    
+        private void displayReverseHelper(Node node) {
+          if (node == null) {
+            return;
+          }
+          displayReverseHelper(node.next);
+          System.out.print(node.data + " ");
+        }
+    
+        public void displayReverse() {
+          displayReverseHelper(head);
+          System.out.println();
+        }
+    
+        private void reversePRHelper(Node node) {
+          if (node == tail) {
+            return;
+          }
+          reversePRHelper(node.next);
+          node.next.next = node;
+        }
+    
+        public void reversePR() {
+          reversePRHelper(head);
+          Node temp = head;
+          head = tail;
+          tail = temp;
+          tail.next = null;
+        }
+    
+        private Node getMidNode(Node node){
+            Node slow = node;
+            Node fast = node.next;
+            while(fast != null && fast.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            return slow;
+        }
+        private Node reversePointer(Node node) {
+            Node prev = null;
+            Node cur = node;
+            while(cur != null) {
+                Node next = cur.next;
+                cur.next = prev;
+                prev = cur;
+                cur = next;
+            }
+            return prev;
+        }
+        public boolean IsPalindrome1() {
+          int left = 0;
+          int right = this.size - 1;
+          while(left < right){
+              Node l = getNodeAt(left);
+              Node r = getNodeAt(right);
+              if(l.data != r.data) return false;
+              left++;
+              right--;
+          }
+          return true;
+        }
+        
+        public boolean IsPalindrome() {
+            Node head1 = head;
+            Node mid = getMidNode(head);
+            Node head2 = mid.next;
+            mid.next = null;
+            head2 = reversePointer(head2);
+            
+            Node t1 = head1;
+            Node t2 = head2;
+            
+            boolean flag = true;
+            while(t1 != null && t2 != null) {
+                if(t1.data != t2.data) {
+                    flag = false;
+                    break;
+                }
+                t1 = t1.next;
+                t2 = t2.next;
+            }
+            head2 = reversePointer(head2);
+            mid.next = head2;
+            return flag;
+        }
       }
     
       public static void main(String[] args) throws Exception {
@@ -317,8 +459,6 @@ public class _10RemoveDuplicateInSortedList {
           l1.addLast(d);
         }
     
-        l1.display();
-        l1.removeDuplicates();
-        l1.display();
+        System.out.println(l1.IsPalindrome());
       }
 }
