@@ -23,14 +23,20 @@ public class _5IsBracketBalanced {
                 if(ch == ']'){
                     if(st.peek() == '[') {
                         st.pop();
+                    } else {
+                        return false;
                     }
                 } else if(ch == '}') {
                     if(st.peek() == '{') {
                         st.pop();
+                    } else {
+                        return false;
                     }
                 } else {
                     if(st.peek() == '(') {
                         st.pop();
+                    } else {
+                        return false;
                     }
                 }
             }
