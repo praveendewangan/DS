@@ -104,6 +104,58 @@ public class _3LevelOrderTreeTraversal {
     }
     System.out.println(".");
   }
+  
+  public List<List<Integer>> levelOrder1(Node root) {
+    List<List<Integer>> res = new ArrayList<>();
+    if(root == null){
+        return res;
+    }
+    Queue<Node> mq = new ArrayDeque<>();
+    Queue<Node> cq = new ArrayDeque<>();
+    mq.add(root);
+    List<Integer> list = new ArrayList<>();
+    while(mq.size() > 0) {
+        Node rm = mq.remove();
+        if(mq.size() == 0){
+            list.add(rm.val);
+            res.add(list);
+            list = new ArrayList<>();
+        } else {
+            list.add(rm.data);
+        }
+        for(Node child : rm.children){
+            cq.add(child);
+        }
+        if(mq.size() == 0){
+            mq = cq;
+            cq = new ArrayDeque<>();
+        }
+    }
+    return res;
+}
+  
+  public List<List<Integer>> levelOrder2(Node root) {
+    List<List<Integer>> res = new ArrayList<>();
+    if(root == null){
+        return res;
+    }
+    Queue<Node> mq = new ArrayDeque<>();
+    mq.add(root);
+    while(mq.size() > 0) {
+        int size = mq.size();
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < size; i++){
+            Node rm = mq.remove();
+            list.add(rm.data);
+            for(Node child : rm.children){
+                mq.add(child);
+            }
+        }
+        res.add(list);
+    }
+    return res;
+}
+  
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

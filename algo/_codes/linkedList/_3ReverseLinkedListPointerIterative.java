@@ -151,7 +151,15 @@ public class _3ReverseLinkedListPointerIterative {
             size--;
           }
         }
-    
+        public Node reverseList(Node node) {
+          if(node == null || node.next == null) {
+              return node;
+          }
+          Node root = reverseList(node.next);
+          node.next.next = node;
+          node.next = null;
+          return root;
+      }
         public void reverseDI() {
           Node prev = null;
           Node cur = this.head;
