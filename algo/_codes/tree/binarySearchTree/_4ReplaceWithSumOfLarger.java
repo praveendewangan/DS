@@ -1,7 +1,8 @@
+
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _4ReplaceWithSumOfLarger {
   public static class Node {
     int data;
     Node left;
@@ -79,34 +80,15 @@ public class _12RemoveLeafFromNode {
     display(node.right);
   }
 
-  public static Node removeLeaves(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
-    }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
-    }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
-    return node;
-  }
-
-  // Approch 2
-  
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
-    return node;
+  static int sum = 0;
+  public static void rwsol(Node node){
+    if(node == null) return;
+    rwsol(node.right);
+    int data = node.data;
+    node.data = sum;
+    sum += data;
+    rwsol(node.left);
+    
   }
 
   public static void main(String[] args) throws Exception {
@@ -123,7 +105,8 @@ public class _12RemoveLeafFromNode {
     }
 
     Node root = construct(arr);
-    root = removeLeaves(root);
+    rwsol(root);
+
     display(root);
   }
 

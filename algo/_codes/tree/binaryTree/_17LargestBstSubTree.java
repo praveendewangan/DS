@@ -1,7 +1,8 @@
+
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _17LargestBstSubTree {
   public static class Node {
     int data;
     Node left;
@@ -78,37 +79,67 @@ public class _12RemoveLeafFromNode {
     display(node.left);
     display(node.right);
   }
-
-  public static Node removeLeaves(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
+//   Using global variable
+static int sz = 0;
+static Node bstnode = null;
+public static BPair largestBst(Node node) {
+    if(node == null) return new BPair();
+    BPair lr = largestBst(node.left);
+    BPair rs = largestBst(node.right);
+    boolean status = lr.max < node.data && rs.min > node.data;
+    BPair res = new BPair();
+    res.min = Math.min(node.data, Math.min(lr.min, rs.min));
+    res.max = Math.max(node.data, Math.max(lr.max, rs.max));
+    res.isBst = lr.isBst && rs.isBst && status;
+    res.count = lr.count + rs.count + 1;
+    if(res.isBst && res.count > sz) {
+        bstnode = node;
+        sz = res.count;
     }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
+    return res;
+}
+// Without using global variable
+  static class BPair {
+       boolean isBst;
+       int max = Integer.MIN_VALUE;
+       int min = Integer.MAX_VALUE;
+       int count = 0;
+       Node node;
+       public BPair() {
+           this.isBst = true;
+       }
+   } 
+   
+    private static BPair lbst(Node node) {
+        if(node == null) return new BPair();
+        BPair lp = lbst(node.left);
+        BPair rp = lbst(node.right);
+        BPair p = new BPair();
+        p.max = Math.max(node.data,Math.max(lp.max,rp.max));
+        p.min = Math.min(node.data,Math.min(lp.min,rp.min));
+        int c = 0;
+        Node nn = null;
+        if(lp.isBst && rp.isBst) {
+            c = lp.count + rp.count;
+        } else if(lp.isBst) {
+            nn = lp.node;
+            c = lp.count;
+        } else if(rp.isBst) {
+            nn = rp.node;
+            c = rp.count;
+        }
+        p.isBst = lp.isBst && rp.isBst && node.data > lp.max && node.data < rp.min;
+        if(p.isBst) {
+            p.count = c + 1;
+            p.node = node;
+        } else {
+            p.count = c;
+            p.node = nn;
+        }
+        return p;
     }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
-    return node;
-  }
-
-  // Approch 2
+   
   
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
-    return node;
-  }
-
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -123,8 +154,9 @@ public class _12RemoveLeafFromNode {
     }
 
     Node root = construct(arr);
-    root = removeLeaves(root);
-    display(root);
+    
+    BPair p = lbst(root);
+    System.out.println(p.node.data + "@" + p.count);
   }
 
 }

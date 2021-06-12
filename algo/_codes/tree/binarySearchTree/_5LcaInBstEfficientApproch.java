@@ -1,7 +1,8 @@
+
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _5LcaInBstEfficientApproch {
   public static class Node {
     int data;
     Node left;
@@ -78,35 +79,38 @@ public class _12RemoveLeafFromNode {
     display(node.left);
     display(node.right);
   }
-
-  public static Node removeLeaves(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
+    private static List<Integer> path(Node node,int data) {
+        if(node == null) {
+            return new ArrayList<>();
+        }
+        if(node.data == data) {
+            List<Integer> list = new ArrayList<>();
+            list.add(data);
+            return list;
+        }
+        if(node.data > data){
+            List<Integer> list = path(node.left,data);
+            if(list.size() > 0) {
+                list.add(node.data);
+            }
+            return list;
+        } else {
+            List<Integer> list = path(node.right,data);
+            if(list.size() > 0) {
+                list.add(node.data);
+            }
+            return list;
+        }
     }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
-    }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
-    return node;
-  }
-
-  // Approch 2
-  
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
-    return node;
+  public static int lca(Node node, int d1, int d2) {
+      if(node == null) return -1;
+      if(node.data > d1 && node.data > d2){
+          return lca(node.left,d1,d2);
+      } else if(node.data < d1 && node.data < d2) {
+          return lca(node.right,d1,d2);
+      } else {
+          return node.data;
+      }
   }
 
   public static void main(String[] args) throws Exception {
@@ -122,9 +126,12 @@ public class _12RemoveLeafFromNode {
       }
     }
 
+    int d1 = Integer.parseInt(br.readLine());
+    int d2 = Integer.parseInt(br.readLine());
+
     Node root = construct(arr);
-    root = removeLeaves(root);
-    display(root);
+    int lca = lca(root, d1, d2);
+    System.out.println(lca);
   }
 
 }

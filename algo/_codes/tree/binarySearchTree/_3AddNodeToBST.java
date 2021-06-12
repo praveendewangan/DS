@@ -1,7 +1,8 @@
+
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _3AddNodeToBST {
   public static class Node {
     int data;
     Node left;
@@ -79,35 +80,32 @@ public class _12RemoveLeafFromNode {
     display(node.right);
   }
 
-  public static Node removeLeaves(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
-    }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
-    }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
+  public static Node add(Node node, int data) {
+    if(node == null) return null;
+    if(node.data > data) {
+        Node left = add(node.left,data);
+        if(left == null) {
+            node.left = new Node(data,null,null);
+        }
+    } else if(node.data < data) {
+        Node right = add(node.right,data);
+        if(right == null) {
+            node.right = new Node(data,null,null);
+        }
+    } 
     return node;
   }
 
-  // Approch 2
-  
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
+  public static Node add1(Node node, int data) {
+    if(node == null) return new Node(data,null,null);
+    if(node.data > data) {
+       node.left = add1(node.left,data);
+    } else if(node.data < data) {
+        node.right = add1(node.right,data);
+    } 
     return node;
   }
+
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -122,8 +120,11 @@ public class _12RemoveLeafFromNode {
       }
     }
 
+    int data = Integer.parseInt(br.readLine());
+
     Node root = construct(arr);
-    root = removeLeaves(root);
+    root = add(root, data);
+
     display(root);
   }
 

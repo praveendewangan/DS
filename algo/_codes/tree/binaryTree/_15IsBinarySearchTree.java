@@ -1,7 +1,8 @@
+
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _15IsBinarySearchTree {
   public static class Node {
     int data;
     Node left;
@@ -79,36 +80,41 @@ public class _12RemoveLeafFromNode {
     display(node.right);
   }
 
-  public static Node removeLeaves(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
+  public static int height(Node node) {
+    if (node == null) {
+      return -1;
     }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
-    }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
-    return node;
-  }
 
-  // Approch 2
+    int lh = height(node.left);
+    int rh = height(node.right);
+
+    int th = Math.max(lh, rh) + 1;
+    return th;
+  }
+   static class BPair {
+       boolean isBst;
+       int max = Integer.MIN_VALUE;
+       int min = Integer.MAX_VALUE;
+       public BPair() {
+           this.isBst = true;
+       }
+   } 
+    public static boolean isBST(Node node) {
+        BPair p = helper(node);
+        return p.isBst;
+    }
+    private static BPair helper(Node node) {
+        if(node == null) return new BPair();
+        BPair lp = helper(node.left);
+        BPair rp = helper(node.right);
+        BPair p = new BPair();
+        p.max = Math.max(node.data,Math.max(lp.max,rp.max));
+        p.min = Math.min(node.data,Math.min(lp.min,rp.min));
+        p.isBst = lp.isBst && rp.isBst && node.data > lp.max && node.data < rp.min;
+        return p;
+    }
+ 
   
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
-    return node;
-  }
-
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -123,8 +129,8 @@ public class _12RemoveLeafFromNode {
     }
 
     Node root = construct(arr);
-    root = removeLeaves(root);
-    display(root);
+    
+    System.out.println(isBST(root));
   }
 
 }

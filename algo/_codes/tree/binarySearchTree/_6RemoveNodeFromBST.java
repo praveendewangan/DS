@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _6RemoveNodeFromBST {
   public static class Node {
     int data;
     Node left;
@@ -79,35 +79,37 @@ public class _12RemoveLeafFromNode {
     display(node.right);
   }
 
-  public static Node removeLeaves(Node node){
+  public static Node remove(Node node, int data) {
     if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
+    if(node.data == data) {
+        if(node.left == null && node.right == null){
+            return null;
+        } else if(node.left != null) {
+            int max = getMaxFromLeft(node.left);
+            remove(node,max);
+            node.data = max;
+            return node;
+        } else {
+            return node.right;
+        }
     }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
-    }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
+    node.left = remove(node.left,data);
+    node.right = remove(node.right,data);
     return node;
   }
-
-  // Approch 2
   
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
-    return node;
+  private static int getMaxFromLeft(Node node) {
+      if(node == null) return Integer.MIN_VALUE;
+      int left = getMaxFromLeft(node.left);
+      int right = getMaxFromLeft(node.right);
+      return Math.max(left,Math.max(right,node.data));
   }
+//   private static void removeLeaf(Node node,int data) {
+//       if(node == null) return;
+//       if(node.data == data) {
+          
+//       }
+//   }
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -122,8 +124,11 @@ public class _12RemoveLeafFromNode {
       }
     }
 
+    int data = Integer.parseInt(br.readLine());
+
     Node root = construct(arr);
-    root = removeLeaves(root);
+    root = remove(root, data);
+
     display(root);
   }
 

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class _12RemoveLeafFromNode {
+public class _2SizeSumMaxMinFindInBST {
   public static class Node {
     int data;
     Node left;
@@ -79,35 +79,54 @@ public class _12RemoveLeafFromNode {
     display(node.right);
   }
 
-  public static Node removeLeaves(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.left.left == null && node.left.right == null) {
-        node.left = null;
-    }
-    if(node.right != null && node.right.left == null && node.right.right == null) {
-        node.right = null;
-    }
-    removeLeaves(node.left);
-    removeLeaves(node.right);
-    return node;
+  public static int size(Node node) {
+    if(node == null) return 0;
+    int res = 1;
+    res += size(node.left);
+    res += size(node.right);
+    return res;
   }
 
-  // Approch 2
-  
-  public static Node removeLeaves2(Node node){
-    if(node == null) return node;
-    if(node.left != null && node.right != null) {
-        node.left = removeLeaves2(node.left);
-        node.right = removeLeaves2(node.right);
-    } else if(node.left != null) {
-        node.left = removeLeaves2(node.left);
-    } else if(node.right != null) {
-        node.right = removeLeaves2(node.right);
-    } else {
-        node = null;
-    }
-    return node;
+  public static int sum(Node node) {
+      if(node == null) return 0;
+      int res = node.data;
+      res += sum(node.left);
+      res += sum(node.right);
+      return res;
   }
+
+  public static int max(Node node) {
+    if(node == null) return Integer.MIN_VALUE;
+    return Math.max(node.data,max(node.right));
+  }
+
+  public static int max1(Node node) {
+    if(node == null) return Integer.MIN_VALUE;
+    else if(node.right == null) return node.data;
+    else return max(node.right);
+  }
+
+  public static int min(Node node) {
+    if(node == null) return Integer.MAX_VALUE;
+    return Math.min(node.data,min(node.left));
+  }
+  
+  public static int min1(Node node) {
+    if(node == null) return Integer.MAX_VALUE;
+    else if(node.left == null) return node.data;
+    else return max(node.left);
+  }
+
+  public static boolean find(Node node, int data){
+    if(node == null) return false;
+    if(node.data > data){
+        return find(node.left,data);
+    } else if(node.data < data) {
+        return find(node.right,data);
+    } else {
+        return true;
+    }
+  }  
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -122,9 +141,21 @@ public class _12RemoveLeafFromNode {
       }
     }
 
+    int data = Integer.parseInt(br.readLine());
+
     Node root = construct(arr);
-    root = removeLeaves(root);
-    display(root);
+
+    int size = size(root);
+    int sum = sum(root);
+    int max = max(root);
+    int min = min(root);
+    boolean found = find(root, data);
+
+    System.out.println(size);
+    System.out.println(sum);
+    System.out.println(max);
+    System.out.println(min);
+    System.out.println(found);
   }
 
 }
