@@ -44,7 +44,7 @@ public class _17PrismMinSpanningTree {
             v[rm.vtx] = true;
             if(rm.parent != -1) {
                 System.out.println("["+rm.vtx + "-" + rm.parent + "@" + rm.wsf+"]");
-                addEdge(mst,rm.vtx,rm.parent,rm.wsf);
+                // addEdge(mst,rm.vtx,rm.parent,rm.wsf);
                 
             }
             for(Edge e : graph[rm.vtx]) {

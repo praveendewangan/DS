@@ -36,7 +36,7 @@ class _21EvaluateDivisionLC399 {
         for(int qi = 0; qi < queries.size(); qi++) {
             String v1 = queries.get(qi).get(0);
             String v2 = queries.get(qi).get(1);
-            if(!graph.containsKey(v1) || !graph.containsKey(v1)) {
+            if(!graph.containsKey(v1) || !graph.containsKey(v2)) {
                 res[qi] = -1.0;
             } else if(v1.equals(v2)) {
                 res[qi] = 1.0;
@@ -62,7 +62,8 @@ class Pair {
         this.wt = wt;
     }
 }
-private boolean bfs(Map<String,List<Edge>> graph,String src,String dest,Set<String> set,double[] res,int idx,double cost) {
+private boolean bfs(Map<String,List<Edge>> graph,String src,String dest,Set<String> set,
+        double[] res,int idx,double cost) {
     
     Queue<Pair> q = new LinkedList<>();
     q.add(new Pair(src,cost));

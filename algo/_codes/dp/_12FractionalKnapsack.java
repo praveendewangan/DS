@@ -56,6 +56,7 @@ public class _12FractionalKnapsack {
             } else {
                 profit += rm.frac*cap;
                 cap = 0;
+                break;
             }
         }
         return profit;

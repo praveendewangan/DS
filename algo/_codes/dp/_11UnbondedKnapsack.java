@@ -71,4 +71,26 @@ public class _11UnbondedKnapsack {
         }
         return dp[cap];
     }
+
+    
+    private static int unboundKSTab2(int[] values,int[] wts,int cap) {
+        int[] dp = new int[cap+1];
+        
+        for(int bagc=0; bagc <= cap; bagc++) {
+            int max = 0;
+            for(int i=0; i < wts.length; i++) {
+                if(wts[i] <= bagc){
+                    int rbagc = bagc - wts[i];
+                    int rbagv = dp[rbagc];
+                    int tbagv = rbagv + values[i];
+                    
+                    if(tbagv > max) {
+                        max = tbagv;
+                    }
+                }
+            }
+            dp[bagc] = max;
+        }
+        return dp[cap];
+    }
 }

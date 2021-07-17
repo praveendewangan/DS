@@ -23,7 +23,7 @@ public class _23SubarrayProductMax{
                 continue;
             } else {
                 long temp = Math.max(arr[i],Math.max(max*arr[i],min*arr[i]));
-                min = Math.min(arr[i],Math.max(max*arr[i],min*arr[i]));
+                min = Math.min(arr[i],Math.min(max*arr[i],min*arr[i]));
                 max = temp;
             }
             if(max > product){

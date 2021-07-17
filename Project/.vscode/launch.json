@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch _1Frequency",
+            "request": "launch",
+            "mainClass": "_1Frequency",
+            "projectName": "Project_fa8e747e"
+        },
+        {
+            "type": "java",
             "name": "Launch _5CountOccInString",
             "request": "launch",
             "mainClass": "_5CountOccInString",
