@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class _1Permutation1 {
 
   public static void permutations(int[] boxes, int ci, int ti){
     if(ci > ti) {

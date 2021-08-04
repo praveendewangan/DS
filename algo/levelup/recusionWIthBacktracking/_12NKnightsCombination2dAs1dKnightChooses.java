@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class _12NKnightsCombination2dAs1dKnightChooses {
 
     public static boolean IsKnightSafe(boolean[][] chess, int i, int j) {
         if(i-1 >= 0 && j-2 >= 0 && chess[i-1][j-2]){

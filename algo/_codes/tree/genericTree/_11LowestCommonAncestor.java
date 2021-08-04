@@ -7,7 +7,7 @@ public class _11LowestCommonAncestor {
     int data;
     ArrayList<Node> children = new ArrayList<>();
   }
-
+// https://practice.geeksforgeeks.org/viewSol.php?subId=e45780584bfa86e8100f68680a704546&pid=700224&user=erpraveendewangan
   public static void display(Node node) {
     String str = node.data + " -> ";
     for (Node child : node.children) {

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class _10NQueensCombination2dAs1dQueenChooses {
 
     public static boolean IsQueenSafe(boolean[][] chess, int row, int col) {
         for(int j = col-1; j >= 0; j--){

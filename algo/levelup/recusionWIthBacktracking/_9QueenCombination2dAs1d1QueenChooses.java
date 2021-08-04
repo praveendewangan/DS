@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class _9QueenCombination2dAs1d1QueenChooses {
 
     public static void queensCombinations(int qpsf, int tq, boolean[][] chess, int lcno) {
         if(qpsf == tq) {

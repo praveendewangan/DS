@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class _4Combination2 {
 
   public static void combinations(int[] boxes, int ci, int ti, int lb){
       if(ci > ti) {

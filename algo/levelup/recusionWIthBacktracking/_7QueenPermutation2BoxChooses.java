@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class _7QueenPermutation2BoxChooses {
 
     public static void queensPermutations1(int qpsf, int tq, int row, int col, String asf, boolean[] queens) {
          if(row == tq) {
