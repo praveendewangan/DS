@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class _25MinStack2 {
 
     public static class MinStack {
