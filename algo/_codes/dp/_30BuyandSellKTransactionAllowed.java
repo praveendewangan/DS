@@ -14,6 +14,27 @@ public class _30BuyandSellKTransactionAllowed {
         int k = scn.nextInt();
         int[][] dp = new int[k+1][n];
 
+        // O(n^3)
+        /**
+         *  for (int t = 1; t <= k; t++) {
+
+            for (int d = 1; d < a.length; d++) {
+                int max = dp[t][d-1];
+                for(int pd = 0; pd < d; pd++){
+                    int ptillpd = dp[t-1][pd];
+                    int ptth = a[d] - a[pd];
+                    if(ptillpd + ptth > max) {
+                        max = ptillpd + ptth;
+                    }
+                }
+                dp[t][d] = max;
+            }
+        }
+        System.out.println(dp[k][n-1]);
+         * 
+         */
+
+         // O(n^2)
         for (int t = 1; t <= k; t++) {
             int max = Integer.MIN_VALUE;
 
